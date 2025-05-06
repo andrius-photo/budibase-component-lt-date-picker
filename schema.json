@@ -49,7 +49,7 @@
         "label": "Locale",
         "key": "locale",
         "options": [
-          "enUS",
+          "ltLT",
           "enGB",
           "bn",
           "da",
@@ -62,7 +62,7 @@
           "ru",
           "zhCN"
         ],
-        "defaultValue": "enUS"
+        "defaultValue": "ltLT"
       },
       {
         "type": "boolean",

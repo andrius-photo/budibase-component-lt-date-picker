@@ -9,7 +9,7 @@
   import { writable } from 'svelte/store'
   import { createEventDispatcher } from 'svelte'
   import { parse as dateParse, isValid } from 'date-fns';
-  import { ltLT } from 'date-fns/locale'
+  import { lt } from 'date-fns/locale'
   import zonedTimeToUtc from 'date-fns-tz/zonedTimeToUtc'
 
   const dispatch = createEventDispatcher<{ select: Date }>()
@@ -73,7 +73,7 @@
 
   /** Locale object for internationalization */
   export let locale: Locale = {}
-  export let dfLocale = ltLT
+  export let dfLocale = lt
 
   export let labelPos = ""
   $: overlayOffsetClass = labelPos === "above" ? "above-label" : ""

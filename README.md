@@ -1,4 +1,4 @@
-# Kasper-date-picker
+# lt-date-picker
 A custom date picker plugin for Budibase, adapted from: https://github.com/probablykasper/date-picker-svelte
 
 # Description

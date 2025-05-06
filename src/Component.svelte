@@ -3,7 +3,7 @@
   import DateInput from "./DateInput.svelte";
   import { localeFromDateFnsLocale } from './locale'
   import { parse, isValid } from 'date-fns';
-  import { enUS, enGB, zhCN, ru, fr, es, de, ptBR, it, ja, bn, da } from 'date-fns/locale';
+  import { ltLT, enGB, zhCN, ru, fr, es, de, ptBR, it, ja, bn, da } from 'date-fns/locale';
 
   export let field
   export let label
@@ -13,8 +13,8 @@
   export let showCalendar = true
   export let min
   export let max
-  export let locale = "enUS"
-  export let format = "MM/dd/yyyy"
+  export let locale = "ltLT"
+  export let format = "yyyy-MM-dd"
   export let customFormat = false
   export let closeOnSelection = false
   export let ignoreTimezones = false
@@ -63,14 +63,14 @@
     }
   }
 
-  let kasperLocale = enUS
-  let dfLocale = enUS
-  let defaultFormat = "MM/dd/yyyy"
+  let kasperLocale = ltLT
+  let dfLocale = ltLT
+  let defaultFormat = "yyyy-MM-dd"
   $: {
-    if (locale === "enUS") {
-      kasperLocale = localeFromDateFnsLocale(enUS)
-      dfLocale = enUS
-      defaultFormat = "MM/dd/yyyy"
+    if (locale === "ltLT") {
+      kasperLocale = localeFromDateFnsLocale(ltLT)
+      dfLocale = ltLT
+      defaultFormat = "yyyy-MM-dd"
     }
     else if (locale === "enGB") {
       kasperLocale = localeFromDateFnsLocale(enGB)

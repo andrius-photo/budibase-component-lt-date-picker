@@ -10,22 +10,22 @@ type InnerLocale = {
 }
 export function getLocaleDefaults(): InnerLocale {
   return {
-    weekdays: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+    weekdays: ['Sek','Pir', 'Antr', 'Tre', 'Ket', 'Pen', 'Šeš'],
     months: [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December',
+      'Sausis',
+      'Vasaris',
+      'Kovas',
+      'Balandis',
+      'Gegužė',
+      'Birželis',
+      'Liepa',
+      'Rugpjūtis',
+      'Rugsėjis',
+      'Spalis',
+      'Lapkritis',
+      'Gruodis',
     ],
-    weekStartsOn: 1,
+    weekStartsOn: 2,
   }
 }
 export function getInnerLocale(locale: Locale = {}): InnerLocale {
